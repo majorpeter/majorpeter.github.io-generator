@@ -1,3 +1,5 @@
 compiler/
 cv/
 export/
+__pycache__
+.idea
