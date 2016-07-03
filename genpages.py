@@ -95,7 +95,7 @@ values = {
             'url': 'https://github.com/majorpeter'
         }
     ],
-    'content': cv_content,
+    'content': '<h1 class="left">' + locale['curriculum_vitae'] + '</h1>' + cv_content.replace('<h1>', '<h1 class="cvtitle">'),
     'actions': actions,
     'copyright_notice': '&copy; Copyright ' + datetime.now().strftime('%Y') + ' Major Péter'
 }
