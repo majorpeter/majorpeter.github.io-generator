@@ -1,0 +1,116 @@
+/**
+*	Major Péter önéletrajza
+*	(c) MP 2014
+*/
+
+h1.cvtitle, div#content div#about-us-block h1.cvtitle {
+	font-size: 26px;
+	color: #333;
+	border-bottom: 2px solid #333;
+	padding-top: 0;
+	padding-bottom: 8px;
+	margin-right: 220px;
+}
+
+.profimg {
+	float: right;
+	margin-left: 4px;
+}
+
+.profile {
+	font-size: 1em;
+}
+
+img.cv-contact {
+    position: relative;
+    top: 2px;
+    margin-right: 8px;
+}
+
+h2.cvhead {
+	color: #333;
+	margin-bottom: 8px;
+	position: relative;
+}
+h2.cvhead > div.icon {
+	position: absolute;
+	left: -110px;
+	width: 100px;
+	top: 4px;
+	text-align: right;
+}
+
+.leftbox {
+	min-height: 250px;
+	line-height: 1.8;
+	font-size: 1.1em;
+}
+
+div.popuptitle {
+	font-size: 1em;
+	text-indent: -60px;
+	padding-left: 60px;
+	padding-bottom: 6px;
+	position: relative;
+	
+	-webkit-transition: color 0.4s ease;
+	-moz-transition: color 0.4s ease;
+	-o-transition: color 0.4s ease;
+	transition: color 0.4s ease;
+}
+div.popuptitle.toggle:hover {
+	cursor: pointer;
+	color: #434343;
+}
+
+div.popuptitle.toggle span.toggle {
+	display: none;
+	width: 8px; height: 8px;
+	background: url('../img/tree_closed.png');
+	position: absolute;
+	left: -15px;
+	top: 7px;
+}
+div.popuptitle.li.toggle { margin-left: 15px }
+div.popuptitle.li.toggle span.toggle { display: block }
+
+div.popuptitle span.tag {
+	margin-left: 5px;
+	background: #333333;
+	border: 1px solid #212121;
+	color: #ffffff;
+	padding: 2px 5px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	font-size: 12px;
+}
+div.popuptitle span.tag.bme { color: #0C59AB; background: #B9D2ED; border-color: #0C59AB; }
+div.popuptitle span.tag.inprogress { color: #24AB0C; background: #C9FAC0; border-color: #248F25; }
+div.popuptitle span.tag.suspended { color: #F79514; background: #FFECD4; border-color: #F79514; }
+div.popuptitle span.tag.stopped { color: #D90404; background: #FFD4D4; border-color: #D90404; }
+
+div.popuptitle span.tag.android { color: #4CBF26; background: #FFFFFF; border-color: #9E9E9E; font-weight: bold }
+div.popuptitle span.tag.qt { color: #FFFFFF; background: #14B316; border-color: #1B751C; font-weight: bold }
+div.popuptitle span.tag.ogre { color: #FFCE47; background: #558556; border-color: #39543A; font-weight: bold }
+div.popuptitle span.tag.cocos2dx { color: #368FF5 }
+div.popuptitle span.tag.pcb { color: #FFD412; background: #20A31C; border-color: #256102 }
+
+div.popuptitle a.para {
+	margin-left: 1.3em;
+	text-decoration: none;
+	display: none;
+}
+
+div.popuptitle img.section {
+    right: 0;
+    position: absolute;
+    height: 24px;
+}
+
+.popupcontent {
+	padding-top: -2px;
+	font-size: 0.95em;
+	padding-left: 45px;
+	padding-bottom: 8px;
+}

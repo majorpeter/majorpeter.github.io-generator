@@ -1,0 +1,133 @@
+@media (max-width: 1000px) {
+	div.container {
+		width: auto;
+		margin: 0 20px
+	}
+	
+	div#header > div > a.logo { margin: 17px 10px 15px 1px }
+	div#header > div > ul.menu > li { padding-right: 0 }
+	
+	div#content div#about-us-block > div.container div.advantages {
+		display: block;
+		margin: 0 auto 10px auto;
+		width: 480px;
+	}
+	
+	div#content div#services-block div.illustration.right {
+		margin-right: 0;
+		margin-left: 20px;
+	}
+	div#content div#services-block p {
+		float: none;
+		width: auto;
+		padding-bottom: 30px;
+	}
+	div#content div#services-block h2.right {
+		width: 100%;
+		float: none;
+	}
+	div#content div#services-block div.illustration.left {
+		margin-left: 0;
+		margin-right: 20px;
+	}
+	div#content div#services-block p.right {
+		float: none;
+	}
+	
+	div#content div#portfolio-block {
+		height: auto;
+	}
+	div#content div#portfolio-block p.left { max-width: 100% }
+	div#content div#portfolio-block.main div.portfolio {
+		position: static;
+		clear: both;
+		padding-top: 25px;
+		margin-bottom: 20px;
+	}
+	div#portfolio-block.showcase div#portfolio-main { display: none }
+	div#portfolio-block div#portfolio-showcase {
+		width: 100%;
+	}
+	div#portfolio-block.showcase div#portfolio-showcase {
+		position: static;
+		margin-bottom: 30px;
+	}
+	div#portfolio-block div#portfolio-showcase table.portfolio { max-width: 100% }
+	div#portfolio-block div#portfolio-showcase table.portfolio img { width: 100% }
+	
+	div#content div#contact-block p.left {
+		width: 60%;
+	}
+	div#content div#contact-block div.plane {
+		display: none;
+	}
+	div#content div#contact-block div.fields { width: 288px }
+}
+@media (max-width: 840px) {
+	div#header { min-height: 60px }
+	div#content { padding-top: 60px }
+	
+	div#content div#mainslider { height: auto }
+	div#content div#mainslider > div > div.item { padding: 30px 0 }
+	div#content div#mainslider > div > div.item.active {
+		position: static;
+	}
+	div#content div#mainslider > div > div.item > h1 { margin-top: 0 }
+	div#content div#mainslider > div > div.item > p { width: 100% }
+	div#content div#mainslider > div > div.bg { display: none }
+	div#content div#mainslider > div > div.item > img {
+		position: static;
+		margin: 0 auto;
+		max-width: 100%;
+	}
+	
+	div#content div#about-us-block > div.container > div.column {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	
+	div#content div#contact-block p.left { width: 100% }
+	div#content div#contact-block div.fields { width: 100% }
+	div#contact-block div.fields input[type="text"], div#contact-block div.fields textarea, div#contact-block div.fields button { width: 100% }
+}
+@media (min-width: 651px) {
+	div#header ul.small-menu { display: none !important }
+}
+@media (max-width: 650px) {
+	div#header > div > ul.menu { display: none }
+	div#header > div > ul.languages > li > a { margin-top: 12px }
+	div#header > div.container > div.menu {display: block}
+	
+	div#content div#about-us-block > div.container > div.background { display: none }
+	div#content div#about-us-block { background: url('/img/aboutus-bg.jpg') #ffffff no-repeat }
+	div#content div#portfolio-block > div.background { display: none }
+	div#content div#portfolio-block { background: url('/img/portfolio-bg.jpg') #e2e2e2 }
+	div#portfolio-block div#portfolio-showcase table.portfolio td:first-child, div#portfolio-block div#portfolio-showcase table.portfolio td:last-child { display: none }
+}
+@media (max-width: 600px) {
+	div#content div#about-us-block > div.container div.advantages {
+		margin: 0;
+		width: 100%;
+	}
+	div#content div#about-us-block > div.container div.advantage {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	
+	div#content div#services-block div.illustration.left, div#content div#services-block div.illustration.right {
+		margin: 20px auto;
+		display: block;
+		float: none;
+		clear: both;
+	}
+	div#content div#services-block h2 { width: 100% }
+	div#content div#services-block h2.right { text-align: left }
+	div#content div#services-block h2.right:after { margin: 10px 0 }
+	div#content div#services-block p.right { text-align: left }
+	
+	div#content div#portfolio-block div.portfolio > div.item {
+		max-width: 100%;
+	}
+	
+	div#footer div.top { display: none }
+}

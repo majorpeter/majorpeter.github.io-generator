@@ -1,0 +1,7 @@
+<div class="actionbar">
+    <div class="container">
+        {% for action in actions %}
+        <a href="{{action.url}}">{% if action.image %}<img {% if action.imgclass %}class="{{action.imgclass}}" {% endif %}src="{{action.image}}"/>{% endif %}{{action.title}}</a>
+        {% endfor %}
+    </div>
+</div>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>{{page_title}}</title>
+	<meta name="keywords" content="{{head_keywords}}" />
+    <meta name="description" content="{{head_desc}}" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<link href="css/responsive.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/application.js"></script>
+	<link href="favicon.ico" rel="shortcut icon" />
+	<link href="css/cv.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.5.css" media="screen" />
+    <script type="text/javascript">$(function() {$('.lightbox').lightBox();});</script><script type="text/javascript" src="js/cv.js"></script>
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<div class="container">
+				<a class="logo" href="#">{{logo_title}}</a>
+				<ul class="menu">
+                    {% for nav in navigation %}
+                    <li><a href="{{nav.url}}">{{nav.title}}</a></li>
+                    {% endfor %}
+                </ul>
+				<div class="menu" onclick="toggleSmallMenu()"></div>
+			</div>
+            <ul class="small-menu">
+                {% for nav in navigation %}
+                <li><a href="{{nav.url}}">{{nav.title}}</a></li>
+                {% endfor %}
+            </ul>
+		</div>
+		<div id="content">
+			{% include 'actionbar.html' %}
+			<div id="main-content">
+				<div class="container">
+					<div class="background"></div>
+					{{content}}
+				</div>
+			</div>
+			{% include 'actionbar.html' %}
+		</div>
+		<div id="footer">
+			<div class="container">
+				<div class="left">
+					{{copyright_notice}}
+				</div>
+				<div class="top" title="{{back_to_top}}"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
