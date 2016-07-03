@@ -59,5 +59,5 @@ function toggleSmallMenu() {
 function updateBgs(){
 	var st = $(this).scrollTop();
 	//about-us
-	$('div#about-us-block div.background').css('top', -st/2);
+	$('div#main-content div.background').css('top', -st/2);
 }
