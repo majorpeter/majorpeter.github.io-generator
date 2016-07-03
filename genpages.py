@@ -61,7 +61,7 @@ actions = [
         {
             'title': locale['printable_version'],
             'image': 'img/print.png',
-            'url': '?' #TODO
+            'url': 'cv_%s.html' % language
         }, {
             'title': locale['download_as_xml'],
             'image': 'img/xml-ico.png',

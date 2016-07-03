@@ -3,6 +3,13 @@
 *	(c) MP 2014
 */
 
+a {
+	border: 0;
+	color:#666666;
+	text-decoration: none;
+}
+a:hover { text-decoration: underline }
+
 h1.cvtitle, div#content div#about-us-block h1.cvtitle {
 	font-size: 26px;
 	color: #333;
