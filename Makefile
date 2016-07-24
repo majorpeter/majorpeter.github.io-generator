@@ -36,6 +36,8 @@ endif
 
 $(XML):
 	$(FETCH_REPO) $(CV) $(CV_DIR)
+	# fail build here to make sure cv resources are detected by make
+	exit 1
 
 $(COMPILER):
 	$(FETCH_REPO) $(CVC) $(CVC_DIR)
