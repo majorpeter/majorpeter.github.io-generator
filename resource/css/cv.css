@@ -47,10 +47,12 @@ h2.cvhead > div.icon {
 	text-align: right;
 }
 
-.leftbox {
-	min-height: 250px;
-	line-height: 1.8;
-	font-size: 1.1em;
+div#contact-info {
+    margin-top: 1.8em;
+    margin-bottom: 1em;
+}
+p.contact {
+    margin: 0.3em 0;
 }
 
 div.popuptitle {
