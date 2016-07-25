@@ -23,11 +23,11 @@ $(document).ready(function(){
 	});
 	
 	$('div.popupcontainer').mouseenter(function(e){
-		$(this).find('a.para').fadeIn(150);
+		$(this).find('a.anchor').fadeIn(150);
 	}).mouseleave(function(e){
-		$(this).find('a.para').stop().fadeOut(150);
+		$(this).find('a.anchor').stop().fadeOut(150);
 	});
-	$('div.popuptitle > a.para').click(function(e){
+	$('div.popuptitle > a.anchor').click(function(e){
 		var selector = $(this).attr('href');
 		navigateToSection(selector);
 		

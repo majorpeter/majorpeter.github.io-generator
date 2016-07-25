@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from _datetime import datetime
 import sys
+import html
 
 if sys.argv.__len__() < 3:
     print('Missing arguments!\n'
@@ -35,8 +36,8 @@ if language == 'hu':
 elif language == 'en':
     cv_src = 'export/cv_en_embed.html'
 
-with open(cv_src, 'r') as html:
-    cv_content = html.read()
+with open(cv_src, 'r') as html_file:
+    cv_content = html_file.read()
 
 if language == 'hu':
     locale = {
@@ -45,7 +46,8 @@ if language == 'hu':
         'download_as_xml': 'Letöltés XML-ként',
         'in_english': 'Angol nyelven (in English)',
         'in_hungarian': 'Magyar nyelven (in Hungarian)',
-        'back_to_top': 'Vissza a tetejére'
+        'back_to_top': 'Vissza a tetejére',
+        'link_to_this_section': 'Hivatkozás erre a bekezdésre'
     }
 elif language == 'en':
     locale = {
@@ -54,7 +56,8 @@ elif language == 'en':
         'download_as_xml': 'Download as XML',
         'in_english': 'In English (angol nyelven)',
         'in_hungarian': 'In Hungarian (magyar nyelven)',
-        'back_to_top': 'Back to the top'
+        'back_to_top': 'Back to the top',
+        'link_to_this_section': 'Link to this section'
     }
 
 actions = [
@@ -81,6 +84,10 @@ elif language == 'en':
         'url': url_index_hu
     })
 
+cv_content = cv_content.\
+    replace('<h1>', '<h1 class="cvtitle">').\
+    replace('<a class="anchor"', '<a class="anchor" title="' + html.escape(locale['link_to_this_section']) + '"')
+
 values = {
     'page_title': 'Major Péter',
     'head_keywords': 'Major Péter, villamosmérnök, electrical engineer, BME, műszaki egyetem, műegyetem',
@@ -95,7 +102,7 @@ values = {
             'url': 'https://github.com/majorpeter'
         }
     ],
-    'content': '<h1 class="left">' + locale['curriculum_vitae'] + '</h1>' + cv_content.replace('<h1>', '<h1 class="cvtitle">'),
+    'content': '<h1 class="left">' + locale['curriculum_vitae'] + '</h1>' + cv_content,
     'actions': actions,
     'copyright_notice': '&copy; Copyright ' + datetime.now().strftime('%Y') + ' Major Péter'
 }
